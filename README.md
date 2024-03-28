@@ -58,3 +58,42 @@ This is the basic overview of the project structure:
 
 - `GET /department-report`: Shows a report with the count of employees in each department.
   
+## Installation
+
+1. **Clone the Repository**
+
+    ```
+    git clone https://yourrepositorylink.git
+    cd hrms-flask-app
+    ```
+
+2. **Create and Activate a Virtual Environment**
+
+    ```
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+3. **Install Packages**
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+4. **Initialize the Database**
+
+    ```
+    flask db init
+    flask db migrate -m "Initial migration."
+    flask db upgrade
+    ```
+
+5. **Run the Application**
+
+    ```
+    flask run
+    ```
+
+## Additional Informations
+
+Welcome to the HRMS Flask application project! As an intern, you will contribute to developing and maintaining a web application that is critical for managing our company's human resources efficiently. I have used basic flask methods and functions to build all the routes and endpoints required for the functioning of app. SQLAlchemy is used for ORM with flask. Jinja engine is used to render html templates.
