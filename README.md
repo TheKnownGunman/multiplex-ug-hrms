@@ -120,6 +120,13 @@ The database consists of two main tables: Employee and Attendance.
     flask run
     ```
 
+| Header1 | Header2 | Header3 |
+|---------|---------|---------|
+| Row1Col1 | Row1Col2 | Row1Col3 |
+| Row2Col1 | Row2Col2 | Row2Col3 |
+| Row3Col1 | Row3Col2 | Row3Col3 |
+
+
 ## Additional Informations
 
 Welcome to the HRMS Flask application project! As an intern, you will contribute to developing and maintaining a web application that is critical for managing our company's human resources efficiently. I have used basic flask methods and functions to build all the routes and endpoints required for the functioning of app. SQLAlchemy is used for ORM with flask. Jinja engine is used to render html templates.
