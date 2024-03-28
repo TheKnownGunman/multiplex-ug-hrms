@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Add New Employee</h2>
+    <form action="{{ url_for('add_employee') }}" method="post">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="designation" placeholder="Designation" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="text" name="department" placeholder="Department" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <input type="date" name="date_of_joining" class="form-control" required>
+        </div>
+        <input type="submit" value="Add Employee" class="btn btn-primary">
+    </form>
+{% endblock %}

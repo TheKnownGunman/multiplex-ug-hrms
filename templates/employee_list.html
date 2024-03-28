@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Mark Attendance</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.designation }}</td>
+            <td>{{ employee.department }}</td>
+            <td>
+                <a href="{{ url_for('mark_attendance', employee_id=employee.id) }}" class="btn">Mark Attendance</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Employees</h2>
+    <ol class="list-group">
+        {% for employee in employees %}
+            <li class="list-group-item">
+                {{ employee.name }} - {{ employee.designation }} in {{ employee.department }}
+                <a href="{{ url_for('employee_attendance', employee_id=employee.id) }}" class="btn btn-info btn-sm float-right">View Attendance</a>
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

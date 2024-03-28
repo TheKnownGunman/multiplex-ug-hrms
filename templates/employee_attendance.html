@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Attendance for {{ employee.name }}</h2>
+    <ul class="list-group">
+        {% for record in attendance_records %}
+            <li class="list-group-item">{{ record.date }} - {{ record.status }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
