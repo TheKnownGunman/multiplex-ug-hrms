@@ -58,6 +58,32 @@ This is the basic overview of the project structure:
 
 - `GET /department-report`: Shows a report with the count of employees in each department.
   
+## Database schema
+
+The database consists of two main tables: Employee and Attendance. 
+
+## Tables
+
+*Employee*
+| Column           | Type        | Description                                      |
+|------------------|-------------|--------------------------------------------------|
+| `id`             | Integer     | A unique identifier for each employee. Primary key. |
+| `name`           | String(100) | The name of the employee.                        |
+| `designation`    | String(100) | The job designation of the employee.             |
+| `department`     | String(100) | The department where the employee works.         |
+| `date_of_joining`| DateTime    | The date when the employee joined the company.   |
+
+
+*Attendance*
+| Column           | Type        | Description                                      |
+|------------------|-------------|--------------------------------------------------|
+| `id`             | Integer     | A unique identifier for each employee. Primary key. |
+| `date`           | Date        | The name of the employee.                        |
+| `status     `    | String(100) | The status ('present or absent').                |
+| `employee_id`    | Integer     | The foreign key linked to id of employee table.  |
+
+![Database Schema](images/db.png)
+
 ## Installation
 
 1. **Clone the Repository**
@@ -97,3 +123,9 @@ This is the basic overview of the project structure:
 ## Additional Informations
 
 Welcome to the HRMS Flask application project! As an intern, you will contribute to developing and maintaining a web application that is critical for managing our company's human resources efficiently. I have used basic flask methods and functions to build all the routes and endpoints required for the functioning of app. SQLAlchemy is used for ORM with flask. Jinja engine is used to render html templates.
+
+![Demo](images/hrms1.png)
+![Demo](images/hrms2.png)
+![Demo](images/hrms3.png)
+![Demo](images/hrms4.png)
+![Demo](images/hrms5.png)
