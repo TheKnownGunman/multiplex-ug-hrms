@@ -31,7 +31,7 @@ This is the basic overview of the project structure:
  - employee_list.html # Template for listing employees
  - home.html # Template for the homepage
  - mark_attendance.html # Template for marking employee attendance
-
+### main files
 - venv/ # Virtual environment directory for project dependencies
 - requirements.txt # Lists all Python dependencies for the project
 - .gitignore # Specifies intentionally untracked files to ignore
